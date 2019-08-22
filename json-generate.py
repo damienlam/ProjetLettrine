@@ -2,19 +2,21 @@
 import json
 import datetime
 import random
+import decimal
 
 num_unite = 2
-
+temp_cuve = float (decimal.Decimal(random.randrange(250, 400))/100)
+temp_exterieur = float (decimal.Decimal(random.randrange(800, 1400))/100)
 
 
 data = {
     "Numéro d'unité": num_unite,
     "Numéro d'automate": 5,
     "Type d'automate": "0X0000BA20",
-    "Température cuve": random.randrange(2.5, 4, 0.10),
-    "Température extérieur": random.randrange(8, 14, 0.10),
+    "Température cuve": temp_cuve,
+    "Température extérieur": temp_exterieur,
     "Poids du lait en cuve": random.randrange(3512, 4607, 1),
-    "Poids du produit fini réalié": 20,
+    "Poids du produit fini réalisé": 20,
     "Mesure pH": 7,
     "Mesure K+": 1,
     "concentration de NaCI": 20,
