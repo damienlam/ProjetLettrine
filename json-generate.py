@@ -26,7 +26,7 @@ data = {
 }
 
 date_unix_epoch = datetime.datetime.now().timestamp()
-filename = f'paramunite_{num_unite}_{date_unix_epoch}.json'
+filename = f'automates/paramunite_{num_unite}_{date_unix_epoch}.json'
 
 with open(filename, 'w') as outfile:
     json.dump(data, outfile)
