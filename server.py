@@ -48,8 +48,3 @@ while True:
 
     # Send msg to client
     connexion_avec_client.send(b"JSON Data was save in Database")
-
-# If msg send by client is "exit"
-""" print("Connection close")
-connexion_avec_client.close()
-connexion_principale.close() """
